@@ -27,7 +27,7 @@
   (and (not (null x))
        (or (null (car x))
 	   (enigma (cdr x)))))
-; always returns nil
+; scan for empty lists in a list
 
 ; (b)
 (defun mystery (x y)
