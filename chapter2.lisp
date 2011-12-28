@@ -41,7 +41,6 @@
 
 ;; exercise 6: what could occur in place of x in each of the following 
 ;  exchanges?
-;  helper function
 
 ; (a)
 (defun test-6a (x)
@@ -69,9 +68,8 @@
 ;  elements is a list
 
 (defun has-sublist (lst)
-  (if (null lst)
-      nil
-      (if (listp (car lst))
+  (if (listp lst)
+      (if (listp (car lst))               ; rely on default nil for falsity
 	  (car lst)
 	  (has-sublist (cdr lst)))))
 
