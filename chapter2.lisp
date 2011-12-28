@@ -1,3 +1,8 @@
+;;; chapter2.lisp
+;;  exercises from ANSI Common Lisp by Paul Graham
+;;  2011-12-28
+;;  Kyle Isom <kyle@nodality.io>
+
 (defun ask-number ()
   (format t "Please enter a number: ")
   (let ((val (read)))
