@@ -1,2 +1,3 @@
-*.ssef
+# ignore compiled Lisp code
+*.sse2f
 
