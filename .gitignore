@@ -1,3 +1,4 @@
 # ignore compiled Lisp code
 *.sse2f
+*.dx64fsl
 
