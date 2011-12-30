@@ -57,8 +57,8 @@
 ;    because t is an atom, not a list)
 
 ; (b)
-(defun test-6b (x)
-  (funcall x (13 (/ 1 0))))
+;(defun test-6b (x)
+;  (funcall x 13 (/ 1 0)))
 ; if x->and, 13
 ; NOTE: because and is a macro, it can't be tested with the above function
 
