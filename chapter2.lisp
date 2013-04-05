@@ -141,6 +141,7 @@
 ;;    (if (null x)
 ;;        (summit (cdr lst))
 ;;      (+ x (summit (cdr lst))))))
+;; there is no stop condition for the recursion.
 
 (defun summit% (lst)
   (if (and (listp lst) (null lst))
@@ -148,3 +149,4 @@
   (let ((x (car lst)))
     (+ (if (null x) 0 x)
        (summit% (cdr lst))))))
+
